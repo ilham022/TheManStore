@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://themanstore.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+      <div class="header-content">
+      <img src="image/logo.jpg" alt="Logo" class="Logoi">
+      <h1>THE MAN STORE</h1>
+      </div>
+      <video autoplay muted loop playsinline id="text-video">
+        <source src="image/cinematic.mp4" type="video/mp4">
+      </video>
+    </header>
+
+    <main>
+        <section class="kotak-3d-container">
+          <div class="kotak-3d" id="kotak-3d">
+            <div class="product">
+                <img src="image/Sepatuhitam.jpg" alt="Produk 1">
+                <h3>SEPATU SLOP</h3>
+                <p>Rp 100000</p>
+                <button class="buy-now" onclick="window.location.href='https://ilhamnurjaman06.orderonline.id/mini-cooker-eletrik'">Buy Now</button>
+            </div>
+          </div>
+          <div class="kotak-3d" id="kotak-3d">
+            <div class="product-2">
+              <img src="image/Jamhitam.jpg" alt="produk 2">
+              <h3>JAM TANGAN</h3>
+              <p>Rp 78000</p>
+              <button onclick="addToCart('Jam hitam', 78000)">Buy Now</button>
+            </div>
+          </div>
+            <!-- Produk Baris 2 -->
+        </section>
+        <section class="kotak-3d-container">
+          <div class="kotak-3d" id="kotak-3d">
+            <div class="product-3">
+              <img src="image/Jakethitam.jpg" alt="produk 3">
+              <h3>MAN JACKET</h3>
+              <p>Rp 150000</p>
+              <button onclick="addToCart('Jaket Pria', 150000)">Buy Now</button>
+            </div>
+          </div>
+          <div class="kotak-3d" id="kotak-3d">
+            <div class="product-4">
+              <img src="image/Dompethitam.jpg" alt="produk 4">
+              <h3>DOMPET</h3>
+              <p>Rp 50000</p>
+              <button onclick="addToCart('Dompet Pria', 50000)">Buy Now</button>
+            </div>
+          </div>
+        </section>
+           <!--Produk Baris 3 -->
+        <section class="kotak-3d-container">
+          <div class="kotak-3d" id="kotak-3d">
+            <div class="product-5">
+              <img src="image/TasPremium.jpg" alt="produk 5">
+              <h3>PREMIUM BAG</h3>
+              <p>Rp 75000</p>
+              <button onclick="addToCart('Premium Bag', 75000)">Buy Now</button>
+            </div>
+          </div>
+          <div class="kotak-3d" id="kotak-3d">
+            <div class="product-6">
+              <img src="image/Snakers.jpg"
+              alt="produk 6">
+              <h3>ORI SNAKERS</h3>
+              <p>Rp 125000</p>
+              <button onclick="addToCart('Original Snakers', 125000)">Buy Now</button>
+            </div>
+          </div>
+        </section>
+        <section class="cart">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-items">
+                <!-- Item keranjang akan ditampilkan di sini -->
+            </ul>
+            <p>Total: Rp <span id="cart-total">0</span></p>
+            <button id="whatsapp-button" onclick="sendToWhatsApp()">BUY</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Toko E-Commerce. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

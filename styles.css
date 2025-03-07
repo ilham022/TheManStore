@@ -1,0 +1,300 @@
+body {
+    background-image: url('image/Walpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+header {
+   position: relative;
+   width: 100%;
+   height: 13vh;
+   display: center;
+   align-items: center;
+   justify-content: center;
+   background-color: black;
+   overflow: hidden;
+   text-align: center;
+}
+.Logoi {
+  width: 80px;
+  height: auto;
+  border-radius: 320px;
+}
+
+.header-content {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 10px;
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+@media (max-width:768px) {
+  .header-content h1 {
+    font-size: 2rem;
+  }
+  .Logo {
+    width: 110px;
+  }
+}
+
+@media (max-width:480px) {
+  .header-content h1 {
+    font-size: 15rem;
+  }
+}
+/*media Queries untuk menyesuaikan tamnahan */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: clamp(1.5rem, 6vw, 4rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+  }
+}
+
+#text-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -.1;
+  mask-image: linear-gradient(black, black);
+  -webkit-mask-image: linear-gradient(black, black);
+  mask-clip: content-box;
+  -webkit-mask-clip: content-box;
+}
+
+.kotak-3d-container {
+  display: flex;
+  justify-content: center;
+  height: 310px;
+  margin-top: 20px;
+  perspective-origin: 1000px;
+  transform-style: preserve-3d;
+}
+
+.kotak-3d {
+  position: 50%;
+  width: 200px;
+  height: 200px;
+  transition: transform 1s;
+  margin: 2px;
+}
+
+.product  {
+    padding: 5px;
+    background-image: url('image/Apibiru.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    transform: translateX(-40%);
+    animation: slideIn 1s forwards;
+}
+
+.product-2  {
+    padding: 5px;
+    background-image: url('image/Apibiru.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    transform: translateX(40%);
+    animation: slideOut 1s forwards;
+}
+
+.product-3  {
+    padding: 5px;
+    background-image: url('image/Apimerah.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    transform: translateX(-40%);
+    animation: slideIn 1s forwards;
+}
+
+.product-4  {
+    padding: 5px;
+    background-image: url('image/Apimerah.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    transform: translateX(40%);
+    animation: slideOut 1s forwards;
+}
+
+.product-5  {
+    padding: 5px;
+    background-image: url('image/Apilava.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    transform: translateX(-40%);
+    animation: slideIn 1s forwards;
+}
+
+.product-6  {
+    padding: 5px;
+    background-image: url('image/Apilava.jpg');
+    background-size: cover;
+    background-position: center;left: 
+    left: ;;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    transform: translateX(40%);
+    animation: slideOut 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-40%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(40%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-2 img {
+    max-width: 103%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-3 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.product-4 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.product-5 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.product-6 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #808080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #606060;
+}
+
+.buy-now {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+.buy-now:hover {
+    background-color: #218838;
+}
+
+#whatsapp-button {
+  background-color: green;
+}
+
+.cart {
+    background-color: black;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid ;
+    border-radius: 15px;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: center;
+    width: 100%;
+    bottom: 0;
+}
